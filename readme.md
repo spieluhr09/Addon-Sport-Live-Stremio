@@ -1,10 +1,12 @@
-**Disclaimer:** This addon is a test project, and its creator is not responsible for its use. The user is solely responsible for the content accessed and for complying with copyright laws.
+Aviso legal: Este complemento es un proyecto de prueba y su creador no se responsabiliza de su uso. El usuario es el único responsable del contenido al que acceda y del cumplimiento de las leyes de derechos de autor.
+
+
 
 ---
 
-## Installation Video Tutorial & Easy Installer
+## Videotutorial de instalación e instalador sencillo
 
-Having trouble installing this addon? I've created a **step-by-step video tutorial** and an **installer (.bat file)** to simplify the process.
+¿Tienes problemas para instalar este complemento? He creado un videotutorial paso a paso y un instalador (archivo .bat) para simplificar el proceso.
 
 
 
@@ -16,13 +18,13 @@ https://github.com/user-attachments/assets/4013acab-c5c4-4bba-9403-7419817a5da2
 
 
 
-For a simpler installation, you can use the **INSTALLER.bat** available in the [releases section](https://github.com/WebStaticCS/Addon-Sport-Live-Stremio/releases/tag/v1.0).
+Para una instalación más sencilla, puedes usar el archivo **INSTALLER.bat** disponible en la [sección de lanzamientos](https://github.com/WebStaticCS/Addon-Sport-Live-Stremio/releases/tag/v1.0).
 
 ---
 
 # Sports Live Stremio Addon
 
-This Stremio addon allows you to watch live, upcoming, and finished sports events, fetching information from a JSON source and providing streams from various providers.
+Este complemento de Stremio te permite ver eventos deportivos en vivo, próximos y finalizados, obteniendo información de una fuente JSON y proporcionando transmisiones de varios proveedores.
 
 ### Requirements
 
@@ -47,17 +49,17 @@ This Stremio addon allows you to watch live, upcoming, and finished sports event
 
 ### Configuration (config.js)
 
-Open config.js and adjust these variables. You can use environment variables for production.
+Abra config.js y ajuste estas variables. Puede usar variables de entorno para producción.
 
--   ADDON_PORT: Port where the addon will run (default: 7000).
+-   ADDON_PORT: Puerto donde se ejecutará el complemento (default: 7000).
 
--   IMAGE_GENERATOR_BASE_URL: URL of your image generation server. Required for dynamic posters. Deploy from:
+-   IMAGE_GENERATOR_BASE_URL: URL de su servidor de generación de imágenes. Necesario para carteles dinámicos. Implementar desde:
     [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FWebStaticCS%2FImage-Generator.git&project-name=image-generator&repo-name=Image-Generator)
 
-    Use your Vercel deployment URL (e.g., https://your-generator.vercel.app/api/generate-image).
+    Utilice la URL de implementación de Vercel (e.g., https://your-generator.vercel.app/api/generate-image).
 
--   TIMEZONE_OFFSET_HOURS: UTC offset for displaying event times (default: -5).
--   Note: You can add more event images to poster_data.js if needed
+-   TIMEZONE_OFFSET_HOURS: Desplazamiento UTC para mostrar las horas de los eventos (valor predeterminado: -5).
+-   Note: Puede agregar más imágenes de eventos a poster_data.js si es necesario
 
 ### Running the Addon
 
@@ -67,12 +69,12 @@ Open config.js and adjust these variables. You can use environment variables for
     node app.js
     ```
 
-2.  The console will show the installation URL (e.g., http://127.0.0.1:7000/manifest.json). Paste it into Stremio > Addons > Install Addon.
+2.  La consola mostrará la URL de instalación (p. ej., http://127.0.0.1:7000/manifest.json). Péguela en Stremio > Complementos > Instalar complemento.
 
 ### Important Notes
 
--   Streams: Playback issues are usually due to CORS.
+-   Streams: Los problemas de reproducción generalmente se deben a CORS.
 
--   Cache: If changes don't appear, clear the addon cache in Stremio or reinstall the addon.
+-   Cache: Si no aparecen los cambios, borre el caché del complemento en Stremio o reinstale el complemento.
 
--   Environment Variables: For production deployment (e.g., Vercel), use environment variables for configurations.
+-   Environment Variables: Para la implementación de producción (por ejemplo, Vercel), utilice variables de entorno para las configuraciones.
